@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Tangerine:wght@700&display=swap" rel="stylesheet">    <title>Hyelim Ahn</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo.png" class="logo-img" alt="logo">
+                <!-- <a href="/">Hyelim Ahn</a>                 -->
+            </div>    
+            <div class="navbar" id="mobileMenu">
+                <div class="menu" >
+                    <a href="/">work</a>
+                    <a href="about.html">about</a>   
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>    
+            </div>
+        </div>     
+        <div class="hero-text">
+            <h1>Hyelim Ahn</h1>
+            <p>UX Designer & Front End Developer</p>
+        </div> 
+        <section id="project">
+            <h2>Learn Korean with K-culture</h2>       
+            <div class="project-row">
+                <p class="project-subtitle">Project goal</p>
+                <p>Create an app with which people can learn Korean culture as well as Korean language</p>
+            </div>
+            <div class="project-row">
+                <p class="project-subtitle">My role</p>
+                <p>UX designer leading the project</p>
+            </div>
+            <div class="project-row">
+                <p class="project-subtitle">Target audience</p>
+                <p>People who are interested in learning Korean language and culture</p>
+            </div>
+            <div class="project-row">
+                <p class="project-subtitle">Key challenges</p>
+                <p>As a Korean teacher, I interviewed my students who took my Korean courses and some other people who are interested in Korea. There were a few challening points as follows:</p>
+                <ul>
+                    <li>There are few ways to study Korean language in relation to Korean culture.</li>
+                    <li>The expressions one can learn from Korean language apps are not always correct and appropriate to use.</li>
+                </ul>
+            </div>
+            <div class="project-row">
+                <p class="project-subtitle">Research study</p>
+                <p>Personas</p>
+                <div class="korean-personas">
+                    <div class="korean-personas-img">
+                        <img src="images/korean-app-persona.png" alt="Persona">
+                    </div>
+                    <div class="korean-personas-img">
+                        <img src="images/korean-app-persona2.png" alt="Persona">
+                    </div>
+                    <div class="korean-personas-img">
+                        <img src="images/korean-app-persona3.png" alt="Persona">
+                    </div>
+                </div>
+                <div class="korean-crazy8">
+                    <p>Crazy 8</p>
+                    <img src="images/korean-app-crazy8.jpg" class="korean-img" alt="Crazy 8">
+                </div>
+            </div>
+            <div class="project-row">
+                <p class="project-subtitle">Initial design</p>
+                <p>My sketches</p>
+                <img src="images/korean-app-initial.jpg" class="korean-img" alt="My sketches">
+            </div>
+            <div class="project-row">
+                <p class="project-subtitle">Wireframes</p>
+                <img src="images/korean-app-wireframe.png" alt="Wireframes">
+            </div>
+            <div class="project-row">
+                <p class="project-subtitle">User testing results</p>
+                <p>I conducted interviews that revealed a few pain points for users.</p>
+                <ul>
+                    <li>The icons on the "Word List" page seem confusing.</li>
+                    <li>There are too many options when a word is clicked.</li>
+                    <li>It is not easy to know what "Language" on the menu means.</li>
+                </ul>
+            </div>
+            <div class="project-row">
+                <p class="project-subtitle">Prototypes</p>
+                <p>Link: <a href="https://www.figma.com/proto/qm0ruNqiJ2qyLMEEo1nhPR/K-Culture-App?node-id=22%3A3&scaling=min-zoom&page-id=21%3A2&starting-point-node-id=22%3A3">click here</a></p>
+            </div>
+            <div class="project-row">
+                <p class="project-subtitle">Conclusion</p>
+                <p>I am planning to improve my design more and launch this app by working with an app developer.</p>
+            </div>         
+        </section>
+        <div class="footer">
+            <p>&copy; 2022. All rights reserved to Hyelim Ahn.</p>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("mobileMenu");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+        </script>
+  </body>
+</html>

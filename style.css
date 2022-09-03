@@ -1,0 +1,414 @@
+/********** BASIC STYLING **********/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #191970;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; 
+    text-align: center; 
+    font-weight: bold;
+}
+p {
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+
+/********** START PAGE **********/
+.wrapper {
+    margin: 0 10em;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #191970;
+    margin-top: 2.5em;
+}
+
+.logo-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar a {
+    font-weight: 600;
+    padding: .5em;
+}
+.navbar a:hover {   
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+
+/*** Work ***/
+#work {
+    margin: 2em 0;
+    clear: both;
+}
+
+.hero-text {
+    clear: both;
+    padding-bottom: 2em;
+    text-align: center;
+}
+h1 {
+    color: #191970;
+    padding-bottom: .2em;
+}
+
+.work-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5em;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.work-col {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.work-img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1em 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: #191970;
+}
+
+.overlay-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.overlay-text a {
+    color: #fff;
+}
+
+.work-col:hover .overlay {
+    opacity: 0.9;
+  }
+
+/*** Footer ***/
+.footer {
+    margin: 2.5em 0;   
+}
+
+/********** PROJECT **********/
+#project {
+    padding: 3em;
+    background-color: #eef0f2;
+}
+#project img {
+    max-width: 95%;
+}
+#project h2 {
+    margin-bottom: 1.5em;
+}
+#project ul li {
+    padding-top: 0.4em;
+}
+
+.project-row {
+    padding-bottom: 2.5em;
+}
+.project-subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #191970;
+}
+
+
+ul {
+    padding-left: 2em;
+}
+
+.project-row a {
+    text-decoration: underline;
+}
+
+.project-sketch, .project-wireframe {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project-wireframe-col {
+    padding-top: .5em;
+}
+
+.korean-personas {
+    display: block;
+}
+.korean-personas-img {
+    margin: .5em 0;
+}
+.korean-crazy8 {
+    padding-top: 1em;
+}
+
+
+
+/*** About ***/
+#about {
+    clear: both;
+    text-align: center;
+    padding: 3em 10em;
+    margin-bottom: 2em;
+}
+.about-img {
+    max-width: 280px;
+    height: auto;
+    border-radius: 50%;
+    padding: 1.5em 0;
+}
+.about-text {
+    text-align: left;
+}
+.about-text h3 {
+    text-align: left;
+    padding-bottom: .5em;
+}
+.about-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-links-resume a {
+    font-weight: bold;
+    border: 1px solid #191970;
+    border-radius: 5px;
+    padding: .5em .8em;
+}
+.about-icon {
+    width: 25px;
+    height: 25px;
+    margin: 1em 0.5em;
+    
+}
+
+
+/********** RESPONSIVE DESIGN **********/
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        margin: 0 5em;
+    }
+
+    #about {
+        padding: 3em 7em;
+    }
+    .about-img {
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #project {
+        padding: 2em;
+    }
+
+    #about {
+        padding: 3em 0;
+    }
+    .about-img {
+        max-width: 220px;
+    }   
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        margin: 0 3em;
+    }
+    .header {
+        margin: 1.5em 0;
+        display: block;
+    }
+
+    .logo {
+        float: left;
+    }
+    .logo-img {
+        max-width: 80%;
+    }
+
+    .navbar {
+        float: right;
+        overflow: hidden;
+    }
+    .navbar .icon {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 40px;
+    }
+    .navbar a {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+    .intro p {
+        font-size: .9rem;
+    }
+    .work-container {
+        display: block;
+    }
+    .work-col {
+        margin-bottom: 1.5em;
+    }
+    .overlay-text {
+        font-size: 1.15rem;
+    }
+
+    #project h2 {
+        font-size: 1.4rem;
+    }
+    .project-subtitle {
+        font-size: 1.2rem;
+    }
+    #project p {
+        font-size: 1rem;
+    }
+    .project-sketch, .project-wireframe {
+        display: block;
+    }
+    .sketch-img {
+        margin: .5em 0;
+    }
+    .project-wireframe-col {
+        padding: 0.5em 0;
+    }
+
+    #about {
+        padding: 3em 1em;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive .icon {
+        position: fixed;
+        transform: translateX(0);
+        transform: translateY(0);
+      }
+    .navbar.responsive .menu {
+        position: relative;
+        float: none;
+        margin-top: 5em;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+    .navbar.responsive .menu a {
+        float: none;
+        display: block;
+        padding: .4em .7em;
+    }
+    .navbar.responsive .menu a:hover {
+        background: #191970;
+        border-radius: 7px;
+        color: #fff;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+        .wrapper {
+            margin: 0 1em;
+        }
+        .navbar .icon {
+            right: 10px;
+        }
+        .work-img {
+            max-width: 90%;
+        }
+        h1 {
+            font-size: 1.4rem;
+        }
+        .hero-text p {
+            font-size: .8rem;
+        }
+        .footer {
+            margin: 1.5em 0;
+        }
+        .footer p {
+            font-size: .9rem;
+        }
+
+        #project {
+            padding: 1em;
+        }
+        #project h2 {
+            font-size: 1.1rem;
+        }
+        .project-subtitle {
+            font-size: 1rem;
+        }
+        #project p {
+            font-size: .8rem;
+        }
+        #project ul li {
+            font-size: .7rem;
+        }
+        .project-row {
+            padding-bottom: 1.5em;
+        }
+
+        #about {
+            padding: 1.5em 0;
+        }
+        .about-img {
+            max-width: 200px;
+        }
+        .about-text h3 {
+            font-size: 1.1rem;
+        }
+        .about-text p {
+            font-size: .9rem;
+        }
+        .about-links {
+            justify-content: space-between;
+        }
+        .about-icon {
+            width: 22px;
+            height: 22px;
+        }
+        .about-links-resume a {
+            font-size: .8rem;
+        }
+  }

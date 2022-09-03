@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Tangerine:wght@700&display=swap" rel="stylesheet">    <title>Hyelim Ahn</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo.png" class="logo-img" alt="logo">
+                <!-- <a href="/">Hyelim Ahn</a>                 -->
+            </div>    
+            <div class="navbar" id="mobileMenu">
+                <div class="menu" >
+                    <a href="/">work</a>
+                    <a href="about.html">about</a>   
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>    
+            </div>
+        </div>     
+        <div class="hero-text">
+            <h1>Hyelim Ahn</h1>
+            <p>UX Designer & Front End Developer</p>
+        </div> 
+        <section id="project">
+            <h2>Salad Bar - Web version</h2>       
+            <div class="project-row">
+                <p class="project-subtitle">Project goal</p>
+                <p>Design a website that is used to order takeout or delivery from a local salad bar in Sweden that is simple and easy to use</p>
+            </div>
+            <div class="project-row">
+                <p class="project-subtitle">My role</p>
+                <p>UX designer leading the project</p>
+            </div>
+            <div class="project-row">
+                <p class="project-subtitle">Target audience</p>
+                <p>Busy adults who find it hard to prepare delicious and healthy meals</p>
+            </div>
+            <div class="project-row">
+                <p class="project-subtitle">Key challenges</p>
+                <p>I conducted interviews which revealed a few stumbling blocks for users.</p>
+                    <ul>
+                        <li><strong>Time:</strong> Many adults are too busy to cook because of their work, studies, families or other reasons.</li>
+                    </ul>
+                    <ul>
+                        <li><strong>Food expenses:</strong> Most good and healthy restaurants are too expensive due to the high prices in Sweden.</li>
+                    </ul>
+                    <ul>
+                        <li><strong>Ordering app:</strong> Hard to find a simple, easy way to order good and nutritious foods.</li>
+                    </ul>
+                    <ul>
+                        <li><strong>Allergies:</strong> Buying a healthy and delicious meal is more difficult for people who have allergies.</li>
+                    </ul>
+            </div>
+            <div class="project-row">
+                <p class="project-subtitle">Research study</p>
+                <p>Persona</p>
+                <img src="images/saladbar-web-persona.png" alt="Persona">
+            </div>
+            <div class="project-row">
+                <p class="project-subtitle">Initial design</p>
+                <p>Sketches - start page</p>
+                <div class="project-sketch">
+                    <div class="sketch-img">
+                        <img src="images/saladbar-web-sketch.jpg" alt="sketch">
+                    </div>
+                    <div class="sketch-img">
+                        <img src="images/saladbar-web-sketch2.jpg" alt="sketch">
+                    </div>
+                    <div class="sketch-img">
+                        <img src="images/saladbar-web-sketch3.jpg" alt="sketch">
+                    </div>
+                </div>            
+            </div>
+            <div class="project-row">
+                <p class="project-subtitle">Wireframes</p>
+                <p>Responsive design</p>
+                <div class="project-wireframe">
+                    <div class="project-wireframe-col">
+                        Start page - web version
+                        <img src="images/saladbar-web-wireframe (1).png" alt="wireframe - web version" class="wireframe-img">
+                    </div>
+                    <div class="project-wireframe-col">
+                        Start page - tablet
+                        <img src="images/saladbar-web-wireframe (2).png" alt="wireframe - tablet version" class="wireframe-img">
+                    </div>
+                    <div class="project-wireframe-col">
+                        Start page - mobile
+                        <img src="images/saladbar-web-wireframe (3).png" alt="wireframe - mobile version" class="wireframe-img">
+                    </div>
+                </div> 
+            </div>
+            <div class="project-row">
+                <p class="project-subtitle">User testing results</p>
+                <p>Main findings from the usability study:</p>
+                <ul>
+                    <li><strong>Text size:</strong> The text on the “Allergy” section is a little too small to read.</li>
+                    <li><strong>Color match:</strong> Many users think that bright yellow color does not suit the dark green background color.</li>
+                    <li><strong>Header size:</strong> Quite a few users regarded the header as narrow and wished it could be as big as the footer.</li>
+                </ul>
+            </div>
+            <div class="project-row">
+                <p class="project-subtitle">Prototype</p>
+                <p>Link: <a href="https://xd.adobe.com/view/c75b818f-8562-4f19-bbc3-7f76f34a6fb4-9208/?fullscreen">click here</a></p>
+            </div>
+            <div class="project-row">
+                <p class="project-subtitle">Conclusion</p>
+                <p>If you want to know more, see my <a href="https://docs.google.com/presentation/d/1ImsN-R14rmwBTeKf74u09Afg-_a9YIcr06-la6XCTTs/edit?usp=sharing">case study</a></p>
+            </div>         
+        </section>
+        <div class="footer">
+            <p>&copy; 2022. All rights reserved to Hyelim Ahn.</p>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("mobileMenu");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+        </script>
+  </body>
+</html>

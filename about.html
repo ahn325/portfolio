@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Tangerine:wght@700&display=swap" rel="stylesheet">    <title>Hyelim Ahn</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="logo">
+            <img src="images/logo.png" class="logo-img" alt="logo">
+        </div>   
+        <div class="navbar" id="mobileMenu">
+            <div class="menu" >
+                <a href="/">work</a>
+                <a href="about.html">about</a>   
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>    
+        </div>
+    </div>      
+        <section id="about">
+          <img src="images/me.png" class="about-img" alt="An image of Hyelim">
+            <div class="about-text">
+              <h3>Hello, my name is Hyelim (pronounced "herim").</h3>
+              <p>I studied the web design program that includes web development and UX design at Högskolan Väst in Sweden, and took online courses at Coursera and Codeacademy. I’m currently looking for opportunities to create and design things that help people and solve real-world challenges.</p><br>
+            </div>
+            <div class="about-links">
+              <div class="about-links-resume">
+                <a href="#">My Resume</a>
+              </div>
+              <div>
+                <a href="#"><img src="images/email.svg" class="about-icon" alt="Email me"></a>
+                <a href="#"><img src="images/linkedin-in.svg" class="about-icon" alt="My LinkedIn"></a>
+              </div>
+            </div>
+        </section>
+        <div class="footer">
+          <p>&copy; 2022. All rights reserved to Hyelim Ahn.</p>
+      </div>
+    </div>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("mobileMenu");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+        </script>
+  </body>
+</html>

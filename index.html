@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Tangerine:wght@700&display=swap" rel="stylesheet">    <title>Hyelim Ahn</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo.png" class="logo-img" alt="logo">
+            </div>    
+            <div class="navbar" id="mobileMenu">
+                <div class="menu" >
+                    <a href="/">work</a>
+                    <a href="about.html">about</a>   
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>    
+            </div>
+        </div>     
+        <section id="work">
+            <div class="hero-text">
+                <h1>Hyelim Ahn</h1>
+                <p>UX Designer & Front End Developer</p>
+            </div> 
+            <div class="work-container">
+                <div class="work-col">
+                    <img src="images/project.png" class="work-img" alt="Salad Restaurant - Mobile version">
+                    <div class="overlay">
+                        <div class="overlay-text">Salad Bar <br> - Mobile version</div>
+                    </div>
+                </div>
+                <div class="work-col">
+                    <img src="images/project2.png" class="work-img" alt="Salad Restaurant - Web version">
+                    <div class="overlay">
+                        <div class="overlay-text">Salad Bar <br> - Web version</div>
+                    </div>
+                </div>
+                <div class="work-col">
+                    <img src="images/project3.png" class="work-img" alt="Learn Korean with K-culture">
+                    <div class="overlay">
+                        <div class="overlay-text">Learn Korean <br> with K-culture</div>
+                    </div>
+                </div>
+                <div class="work-col">
+                    <img src="images/project4.png" class="work-img" alt="BowWow">
+                    <div class="overlay">
+                        <div class="overlay-text"> <a href="https://advokatmona.se/">Website <br> - Law firm in Sweden</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="footer">
+            <p>&copy; 2022. All rights reserved to Hyelim Ahn.</p>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("mobileMenu");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+        </script>
+  </body>
+</html>
